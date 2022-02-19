@@ -16,6 +16,5 @@ export const NavLinkStyled = styled(NavLink)`
   text-decoration: none;
   padding: 5px;
   cursor: pointer;
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 28px;
 `;

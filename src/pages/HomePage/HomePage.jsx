@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import * as MoviesAPI from '../../services/fetch-api';
+import * as MoviesAPI from '../../services/apiService';
 import MoviesList from '../../components/MoviesList/MoviesList';
 import { TitleStyled } from './HomePage.styled';
 import Loader from '../../components/Loader/Loader';
@@ -31,7 +31,7 @@ export default function HomePage() {
 
   return (
     <div>
-      <TitleStyled>Trending today</TitleStyled>
+      <TitleStyled>Trending movie today</TitleStyled>
       {loading && <Loader />}
       {items && <MoviesList items={items}></MoviesList>}
     </div>
